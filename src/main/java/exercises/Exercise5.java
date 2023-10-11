@@ -25,10 +25,19 @@ public class Exercise5 {
         int number = sc.nextInt();
         System.out.println();
 
+        int aux = 1;
+
         for (int i = 1; i <= number; i++) {
 
             for (int j = 1; j <= number; j++) {
-                System.out.print(j + " ");
+
+                if (number >  3 && number < 10 && aux < 10) {
+                    System.out.print("0" + aux + " ");
+                } else {
+                    System.out.print(aux + " ");
+                }
+
+                aux++;
             }
 
             System.out.println();
