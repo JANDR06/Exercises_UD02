@@ -10,13 +10,10 @@ package exercises;
 public class Exercise2 {
     public static void main(String[] args) {
 
-        int negative;
-
         for (int i = 0; i <= 10; i++) {
 
             if (i % 2 != 0) {
-                negative = i * (-1);
-                System.out.print(negative + " ");
+                System.out.print(-i + " ");
 
             } else {
                 System.out.print(i + " ");
